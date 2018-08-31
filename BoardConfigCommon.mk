@@ -59,6 +59,8 @@ BOARD_BRCM_HCI_NUM := 26
 
 # Camera
 TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /system/bin/mediaserver=23
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
