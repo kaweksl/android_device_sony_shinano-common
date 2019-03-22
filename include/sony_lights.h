@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-#define LED_BACKLIGHT_PATH "/sys/class/leds/wled:backlight/"
+#define LED_BACKLIGHT_PATH "/sys/class/leds/lcd-backlight/"
