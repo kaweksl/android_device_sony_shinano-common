@@ -1,7 +1,3 @@
-# Active Noise Cancelling
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.anc.enabled=true
-
 # aDSP sensors
 ## max rate
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -41,13 +37,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
     ro.qcom.ad.calib.data=/system/etc/ad_calib.cfg
 
-# Audio HAL
+# Audio config
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.audio.fluence.audiorec=true \
-    persist.vendor.audio.fluence.speaker=true \
-    persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=false \
-    ro.vendor.audio.sdk.fluencetype=fluence
+    ro.qc.sdk.audio.fluencetype=fluence \
+    persist.audio.fluence.voicecall=true \
+    persist.audio.fluence.voicerec=false \
+    persist.audio.fluence.audiorec=true \
+    persist.audio.fluence.speaker=true \
+    persist.audio.handset.mic.type=analog \
+    persist.audio.anc.enabled=true
 
 # Bluetooth rfkill
 PRODUCT_PROPERTY_OVERRIDES += \
